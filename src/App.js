@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Router>
-     
+        <Switch>
         <Route exact path='/' component={MainPage} />
         <Route path='/login' exact component={LoginPage} />
         <Route path='/signup' exact component={SignUpPage} />
@@ -49,7 +49,7 @@ function App() {
         <Route path='/study/report' component={ReportCardPage} />
         <Route path='/my/withdrawal' component={Withdrawal}/>
        
-      
+        </Switch>
       </Router>
     </>
   );
